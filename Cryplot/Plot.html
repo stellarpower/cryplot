@@ -1,0 +1,3049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 1.0.0">
+<meta name="crystal_docs.project_version" content="main">
+<meta name="crystal_docs.project_name" content="cryplot">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="cryplot">
+  <title>Cryplot::Plot - cryplot main</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          cryplot
+        </a>
+      </h1>
+
+      <span class="project-version">
+        main
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="cryplot/Cryplot" data-name="cryplot">
+      <a href="../Cryplot.html">Cryplot</a>
+      
+        <ul>
+  
+  <li class=" " data-id="cryplot/Cryplot/AxisLabel" data-name="cryplot::axislabel">
+      <a href="../Cryplot/AxisLabel.html">AxisLabel</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/BaseMixin" data-name="cryplot::basemixin(t)">
+      <a href="../Cryplot/BaseMixin.html">BaseMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/BasePlot" data-name="cryplot::baseplot">
+      <a href="../Cryplot/BasePlot.html">BasePlot</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/BaseTics" data-name="cryplot::basetics(t)">
+      <a href="../Cryplot/BaseTics.html">BaseTics</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Border" data-name="cryplot::border">
+      <a href="../Cryplot/Border.html">Border</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Depth" data-name="cryplot::depth">
+      <a href="../Cryplot/Depth.html">Depth</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/DepthMixin" data-name="cryplot::depthmixin(t)">
+      <a href="../Cryplot/DepthMixin.html">DepthMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Draw" data-name="cryplot::draw">
+      <a href="../Cryplot/Draw.html">Draw</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Extension" data-name="cryplot::extension">
+      <a href="../Cryplot/Extension.html">Extension</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Figure" data-name="cryplot::figure">
+      <a href="../Cryplot/Figure.html">Figure</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Fill" data-name="cryplot::fill">
+      <a href="../Cryplot/Fill.html">Fill</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/FilledCurve" data-name="cryplot::filledcurve">
+      <a href="../Cryplot/FilledCurve.html">FilledCurve</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/FilledCurveMixin" data-name="cryplot::filledcurvemixin(t)">
+      <a href="../Cryplot/FilledCurveMixin.html">FilledCurveMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/FillMixin" data-name="cryplot::fillmixin(t)">
+      <a href="../Cryplot/FillMixin.html">FillMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/FillStyle" data-name="cryplot::fillstyle">
+      <a href="../Cryplot/FillStyle.html">FillStyle</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Font" data-name="cryplot::font">
+      <a href="../Cryplot/Font.html">Font</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/FontMixin" data-name="cryplot::fontmixin(t)">
+      <a href="../Cryplot/FontMixin.html">FontMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Frame" data-name="cryplot::frame">
+      <a href="../Cryplot/Frame.html">Frame</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/FrameMixin" data-name="cryplot::framemixin(t)">
+      <a href="../Cryplot/FrameMixin.html">FrameMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Grid" data-name="cryplot::grid">
+      <a href="../Cryplot/Grid.html">Grid</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/GridBase" data-name="cryplot::gridbase">
+      <a href="../Cryplot/GridBase.html">GridBase</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/HistogramStyle" data-name="cryplot::histogramstyle">
+      <a href="../Cryplot/HistogramStyle.html">HistogramStyle</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Legend" data-name="cryplot::legend">
+      <a href="../Cryplot/Legend.html">Legend</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Line" data-name="cryplot::line">
+      <a href="../Cryplot/Line.html">Line</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/LineMixin" data-name="cryplot::linemixin(t)">
+      <a href="../Cryplot/LineMixin.html">LineMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/MajorTics" data-name="cryplot::majortics">
+      <a href="../Cryplot/MajorTics.html">MajorTics</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/MinorTics" data-name="cryplot::minortics">
+      <a href="../Cryplot/MinorTics.html">MinorTics</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/MultiPlots" data-name="cryplot::multiplots">
+      <a href="../Cryplot/MultiPlots.html">MultiPlots</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Offset" data-name="cryplot::offset">
+      <a href="../Cryplot/Offset.html">Offset</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/OffsetMixin" data-name="cryplot::offsetmixin(t)">
+      <a href="../Cryplot/OffsetMixin.html">OffsetMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Palette" data-name="cryplot::palette">
+      <a href="../Cryplot/Palette.html">Palette</a>
+      
+    </li>
+  
+  <li class=" current" data-id="cryplot/Cryplot/Plot" data-name="cryplot::plot">
+      <a href="../Cryplot/Plot.html">Plot</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Plot3D" data-name="cryplot::plot3d">
+      <a href="../Cryplot/Plot3D.html">Plot3D</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/PlotXD" data-name="cryplot::plotxd">
+      <a href="../Cryplot/PlotXD.html">PlotXD</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Point" data-name="cryplot::point">
+      <a href="../Cryplot/Point.html">Point</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/PointMixin" data-name="cryplot::pointmixin(t)">
+      <a href="../Cryplot/PointMixin.html">PointMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Show" data-name="cryplot::show">
+      <a href="../Cryplot/Show.html">Show</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/ShowMixin" data-name="cryplot::showmixin(t)">
+      <a href="../Cryplot/ShowMixin.html">ShowMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/StringOrFloat" data-name="cryplot::stringorfloat">
+      <a href="../Cryplot/StringOrFloat.html">StringOrFloat</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Strings" data-name="cryplot::strings">
+      <a href="../Cryplot/Strings.html">Strings</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Text" data-name="cryplot::text">
+      <a href="../Cryplot/Text.html">Text</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/TextMixin" data-name="cryplot::textmixin(t)">
+      <a href="../Cryplot/TextMixin.html">TextMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Tics" data-name="cryplot::tics">
+      <a href="../Cryplot/Tics.html">Tics</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Title" data-name="cryplot::title">
+      <a href="../Cryplot/Title.html">Title</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/TitleMixin" data-name="cryplot::titlemixin(t)">
+      <a href="../Cryplot/TitleMixin.html">TitleMixin</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/UnkownPalette" data-name="cryplot::unkownpalette">
+      <a href="../Cryplot/UnkownPalette.html">UnkownPalette</a>
+      
+    </li>
+  
+  <li class=" " data-id="cryplot/Cryplot/Vec" data-name="cryplot::vec">
+      <a href="../Cryplot/Vec.html">Vec</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Cryplot::Plot
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Cryplot/Plot.html">Cryplot::Plot</a></li><li class="superclass"><a href="../Cryplot/BasePlot.html">Cryplot::BasePlot</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>Class used to create a plot containing graphical elements</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L10" target="_blank">
+        plot/plot.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#box_width_absolute(val:Float64)-instance-method" class="signature"><strong>#box_width_absolute</strong>(val : Float64)</a>
+        
+          <div class="summary"><p>Set the default width of boxes in plots containing boxes (in absolute mode).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#box_width_relative(val:Float64)-instance-method" class="signature"><strong>#box_width_relative</strong>(val : Float64)</a>
+        
+          <div class="summary"><p>Set the default width of boxes in plots containing boxes (in relative mode).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_boxes(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xwidthcol:String%7CInt32)-instance-method" class="signature"><strong>#draw_boxes</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xwidthcol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw boxes with given values at @p xcol and @p ycol columns in file @p name as well as the box widths @p xwidthcol.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_boxes(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_boxes</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw boxes with given values at @p xcol and @p ycol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_boxes(x:X,y:Y,xwidth:XW):DrawforallX,Y,XW-instance-method" class="signature"><strong>#draw_boxes</strong>(x : X, y : Y, xwidth : XW) : Draw forall X, Y, XW</a>
+        
+          <div class="summary"><p>Draw boxes with given @p x and @p y vectors as well as the box widths @p xwidth.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_boxes(x:X,y:Y):DrawforallX,Y-instance-method" class="signature"><strong>#draw_boxes</strong>(x : X, y : Y) : Draw forall X, Y</a>
+        
+          <div class="summary"><p>Draw boxes with given @p x and @p y vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_boxes_with_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ylowcol:String%7CInt32,yhighcol:String%7CInt32)-instance-method" class="signature"><strong>#draw_boxes_with_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ylowcol : String | Int32, yhighcol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw boxes with error bars along <em>y</em> with given values at @p xcol, @p ycol, @p ylowcol, and @p yhighcol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_boxes_with_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ydeltacol:String%7CInt32)-instance-method" class="signature"><strong>#draw_boxes_with_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ydeltacol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw boxes with error bars along <em>y</em> with given values at @p xcol, @p ycol, @p ydeltacol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_boxes_with_error_bars_y(x:X,y:Y,ylow:YL,yhigh:YH):DrawforallX,Y,YL,YH-instance-method" class="signature"><strong>#draw_boxes_with_error_bars_y</strong>(x : X, y : Y, ylow : YL, yhigh : YH) : Draw forall X, Y, YL, YH</a>
+        
+          <div class="summary"><p>Draw boxes with error bars along <em>y</em> with given @p x, @p y, @p ylow, and @p yhigh vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_boxes_with_error_bars_y(x:X,y:Y,ydelta:YD):DrawforallX,Y,YD-instance-method" class="signature"><strong>#draw_boxes_with_error_bars_y</strong>(x : X, y : Y, ydelta : YD) : Draw forall X, Y, YD</a>
+        
+          <div class="summary"><p>Draw boxes with error bars along <em>y</em> with given @p x, @p y, @p ydelta vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_broken_curve(x:X,y:Y):DrawforallX,Y-instance-method" class="signature"><strong>#draw_broken_curve</strong>(x : X, y : Y) : Draw forall X, Y</a>
+        
+          <div class="summary"><p>Draw a curve with given @p x and @p y vectors, breaking this curve whenever NaN is found in @p x or @p y.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_broken_curve_with_points(x:X,y:Y):DrawforallX,Y-instance-method" class="signature"><strong>#draw_broken_curve_with_points</strong>(x : X, y : Y) : Draw forall X, Y</a>
+        
+          <div class="summary"><p>Draw a curve with points with given @p x and @p y vectors, breaking this curve whenever NaN is found in @p x or @p y.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_curve</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw a curve with given values at @p xcol and @p ycol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve(x:X,y:Y):DrawforallX,Y-instance-method" class="signature"><strong>#draw_curve</strong>(x : X, y : Y) : Draw forall X, Y</a>
+        
+          <div class="summary"><p>Draw a curve with given @p x and @p y vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_x(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xlowcol:String%7CInt32,xhighcol:String%7CInt32)-instance-method" class="signature"><strong>#draw_curve_with_error_bars_x</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xlowcol : String | Int32, xhighcol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>x</em> with given values at @p xcol, @p ycol, @p xlowcol, and @p xhighcol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_x(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xdeltacol:String%7CInt32)-instance-method" class="signature"><strong>#draw_curve_with_error_bars_x</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xdeltacol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>x</em> with given values at @p xcol, @p ycol, and @p xdeltacol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_x(x:X,y:Y,xlow:XL,xhigh:XH):DrawforallX,Y,XL,XH-instance-method" class="signature"><strong>#draw_curve_with_error_bars_x</strong>(x : X, y : Y, xlow : XL, xhigh : XH) : Draw forall X, Y, XL, XH</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>x</em> with given @p x, @p y, @p xlow, and @p xhigh vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_x(x:X,y:Y,xdelta:XD):DrawforallX,Y,XD-instance-method" class="signature"><strong>#draw_curve_with_error_bars_x</strong>(x : X, y : Y, xdelta : XD) : Draw forall X, Y, XD</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>x</em> with given @p x, @p y, and @p xdelta vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_xy(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xlowcol:String%7CInt32,xhighcol:String%7CInt32,ylowcol:String%7CInt32,yhighcol:String%7CInt32)-instance-method" class="signature"><strong>#draw_curve_with_error_bars_xy</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xlowcol : String | Int32, xhighcol : String | Int32, ylowcol : String | Int32, yhighcol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>x</em> and <em>y</em> with given values at @p xcol, @p ycol, @p xlowcol, @p xhighcol, @p ylowcol, and @p yhighcol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_xy(x:X,y:Y,xlow:XL,xhigh:XH,ylow:YL,yhigh:YH):DrawforallX,Y,XL,XH,YL,YH-instance-method" class="signature"><strong>#draw_curve_with_error_bars_xy</strong>(x : X, y : Y, xlow : XL, xhigh : XH, ylow : YL, yhigh : YH) : Draw forall X, Y, XL, XH, YL, YH</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>x</em> and <em>y</em> with given @p x, @p y, @p xlow, @p xhigh, @p ylow, and @p yhigh vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_xy(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xdeltacol:String%7CInt32,ydeltacol:String%7CInt32)-instance-method" class="signature"><strong>#draw_curve_with_error_bars_xy</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xdeltacol : String | Int32, ydeltacol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>x</em> and <em>y</em> with given values at @p xcol, @p ycol, @p xdeltacol, and @p ydeltacol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_xy(x:X,y:Y,xdelta:XD,ydelta:YD):DrawforallX,Y,XD,YD-instance-method" class="signature"><strong>#draw_curve_with_error_bars_xy</strong>(x : X, y : Y, xdelta : XD, ydelta : YD) : Draw forall X, Y, XD, YD</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>x</em> and <em>y</em> with given @p x, @p y, @p xdelta, and @p ydelta vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ylowcol:String%7CInt32,yhighcol:String%7CInt32)-instance-method" class="signature"><strong>#draw_curve_with_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ylowcol : String | Int32, yhighcol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>y</em> with given values at @p xcol, @p ycol, @p ylowcol, and @p yhighcol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ydeltacol:String%7CInt32)-instance-method" class="signature"><strong>#draw_curve_with_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ydeltacol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>y</em> with given values at @p xcol, @p ycol, and @p ydeltacol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_y(x:X,y:Y,ylow:YL,yhigh:YH):DrawforallX,Y,YL,YH-instance-method" class="signature"><strong>#draw_curve_with_error_bars_y</strong>(x : X, y : Y, ylow : YL, yhigh : YH) : Draw forall X, Y, YL, YH</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>y</em> with given @p x, @p y, @p xlow, and @p xhigh vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_error_bars_y(x:X,y:Y,ydelta:XD):DrawforallX,Y,XD-instance-method" class="signature"><strong>#draw_curve_with_error_bars_y</strong>(x : X, y : Y, ydelta : XD) : Draw forall X, Y, XD</a>
+        
+          <div class="summary"><p>Draw a curve with error bars along <em>y</em> with given @p x, @p y, and @p xdelta vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_points(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_curve_with_points</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw a curve with points with given values at @p xcol and @p ycol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curve_with_points(x:X,y:Y):DrawforallX,Y-instance-method" class="signature"><strong>#draw_curve_with_points</strong>(x : X, y : Y) : Draw forall X, Y</a>
+        
+          <div class="summary"><p>Draw a curve with points with given @p x and @p y vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curves_filled(x:X,y1:Y1,y2:Y2):DrawforallX,Y1,Y2-instance-method" class="signature"><strong>#draw_curves_filled</strong>(x : X, y1 : Y1, y2 : Y2) : Draw forall X, Y1, Y2</a>
+        
+          <div class="summary"><p>Draw curves with given @p x, @p y1 and @p y2 vectors with filled areas above / below / between curves.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_curves_filled(x:X,y:Y):DrawforallX,Y-instance-method" class="signature"><strong>#draw_curves_filled</strong>(x : X, y : Y) : Draw forall X, Y</a>
+        
+          <div class="summary"><p>Draw curves with given @p x and @p y vectors with filled areas above / below axes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_dots(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_dots</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw dots with given values at @p xcol and @p ycol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_dots(x,y)-instance-method" class="signature"><strong>#draw_dots</strong>(x, y)</a>
+        
+          <div class="summary"><p>Draw dots with given @p x and @p y vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_x(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xlowcol:String%7CInt32,xhighcol:String%7CInt32)-instance-method" class="signature"><strong>#draw_error_bars_x</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xlowcol : String | Int32, xhighcol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>x</em> with given values at @p xcol, @p ycol, @p xlowcol, and @p xhighcol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_x(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xdeltacol:String%7CInt32)-instance-method" class="signature"><strong>#draw_error_bars_x</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xdeltacol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>x</em> with given values at @p xcol, @p ycol, and @p xdeltacol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_x(x,y,xlow,xhigh)-instance-method" class="signature"><strong>#draw_error_bars_x</strong>(x, y, xlow, xhigh)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>x</em> with given @p x, @p y, @p xlow, and @p xhigh vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_x(x,y,xdelta)-instance-method" class="signature"><strong>#draw_error_bars_x</strong>(x, y, xdelta)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>x</em> with given @p x, @p y, and @p xdelta vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_xy(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xlowcol:String%7CInt32,xhighcol:String%7CInt32,ylowcol:String%7CInt32,yhighcol:String%7CInt32)-instance-method" class="signature"><strong>#draw_error_bars_xy</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xlowcol : String | Int32, xhighcol : String | Int32, ylowcol : String | Int32, yhighcol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>x</em> and <em>y</em> with given values at @p xcol, @p ycol, @p xlowcol, @p xhighcol, @p ylowcol, and @p yhighcol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_xy(x,y,xlow,xhigh,ylow,yhigh)-instance-method" class="signature"><strong>#draw_error_bars_xy</strong>(x, y, xlow, xhigh, ylow, yhigh)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>x</em> and <em>y</em> with given @p x, @p y, @p xlow, @p xhigh, @p ylow, and @p yhigh vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_xy(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xdeltacol:String%7CInt32,ydeltacol:String%7CInt32)-instance-method" class="signature"><strong>#draw_error_bars_xy</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xdeltacol : String | Int32, ydeltacol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>x</em> and <em>y</em> with given values at @p xcol, @p ycol, @p xdeltacol, and @p ydeltacol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_xy(x,y,xdelta,ydelta)-instance-method" class="signature"><strong>#draw_error_bars_xy</strong>(x, y, xdelta, ydelta)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>x</em> and <em>y</em> with given @p x, @p y, @p xdelta, and @p ydelta vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ylowcol:String%7CInt32,yhighcol:String%7CInt32)-instance-method" class="signature"><strong>#draw_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ylowcol : String | Int32, yhighcol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>y</em> with given values at @p xcol, @p ycol, @p ylowcol, and @p yhighcol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ydeltacol:String%7CInt32)-instance-method" class="signature"><strong>#draw_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ydeltacol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>y</em> with given values at @p xcol, @p ycol, and @p ydeltacol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_y(x,y,ylow,yhigh)-instance-method" class="signature"><strong>#draw_error_bars_y</strong>(x, y, ylow, yhigh)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>y</em> with given @p x, @p y, @p ylow, and @p yhigh vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_error_bars_y(x,y,ydelta)-instance-method" class="signature"><strong>#draw_error_bars_y</strong>(x, y, ydelta)</a>
+        
+          <div class="summary"><p>Draw error bars along <em>y</em> with given @p x, @p y, and @p ydelta vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_histogram(name:String,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_histogram</strong>(name : String, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw a histogram with given values at @p ycol column in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_histogram(y)-instance-method" class="signature"><strong>#draw_histogram</strong>(y)</a>
+        
+          <div class="summary"><p>Draw a histogram for the given @p y vector.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_impulses(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_impulses</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw impulses with given values at @p xcol and @p ycol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_impulses(x,y)-instance-method" class="signature"><strong>#draw_impulses</strong>(x, y)</a>
+        
+          <div class="summary"><p>Draw impulses with given @p x and @p y vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_points(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_points</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw points with given values at @p xcol and @p ycol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_points(x,y)-instance-method" class="signature"><strong>#draw_points</strong>(x, y)</a>
+        
+          <div class="summary"><p>Draw points with given @p x and @p y vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_steps(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_steps</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw steps with given values at @p xcol and @p ycol columns in file @p name.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_steps(x,y)-instance-method" class="signature"><strong>#draw_steps</strong>(x, y)</a>
+        
+          <div class="summary"><p>Draw steps with given @p x and @p y vectors.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_steps_change_first_x(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_steps_change_first_x</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw steps with given values at @p xcol and @p ycol columns in file @p name with steps along <em>x</em> changes first.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_steps_change_first_x(x,y)-instance-method" class="signature"><strong>#draw_steps_change_first_x</strong>(x, y)</a>
+        
+          <div class="summary"><p>Draw steps with given @p x and @p y vectors with steps along <em>x</em> changes first.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_steps_change_first_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_steps_change_first_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw steps with given values at @p xcol and @p ycol columns in file @p name with steps along <em>y</em> changes first.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_steps_change_first_y(x,y)-instance-method" class="signature"><strong>#draw_steps_change_first_y</strong>(x, y)</a>
+        
+          <div class="summary"><p>Draw steps with given @p x and @p y vectors with steps along <em>y</em> changes first.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_steps_filled(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_steps_filled</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw steps with given values at @p xcol and @p ycol columns in file @p name with filled area below steps.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_steps_filled(x,y)-instance-method" class="signature"><strong>#draw_steps_filled</strong>(x, y)</a>
+        
+          <div class="summary"><p>Draw steps with given @p x and @p y vectors with filled area below steps.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_steps_histogram(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method" class="signature"><strong>#draw_steps_histogram</strong>(name : String, xcol : String | Int32, ycol : String | Int32)</a>
+        
+          <div class="summary"><p>Draw steps with given values at @p xcol and @p ycol columns in file @p name in a histogram style</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_steps_histogram(x,y)-instance-method" class="signature"><strong>#draw_steps_histogram</strong>(x, y)</a>
+        
+          <div class="summary"><p>Draw steps with given @p x and @p y vectors in a histogram style</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_with_cols(name:String,with_:String,cols:Array(String%7CInt32))-instance-method" class="signature"><strong>#draw_with_cols</strong>(name : String, with_ : String, cols : Array(String | Int32))</a>
+        
+          <div class="summary"><p>Draw plot object with given style and given vectors (e.g., <code>plot.draw("lines", x, y)</code>).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_with_vecs(with_:String,x:X,*vecs:Array):DrawforallX-instance-method" class="signature"><strong>#draw_with_vecs</strong>(with_ : String, x : X, *vecs : Array) : Draw forall X</a>
+        
+          <div class="summary"><p>Draw plot object with given style and given vectors (e.g., <code>plot.draw("lines", x, y)</code>).</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#draw_with_vecs_containing_nan(with_:String,x:X,*vecs:Array):DrawforallX-instance-method" class="signature"><strong>#draw_with_vecs_containing_nan</strong>(with_ : String, x : X, *vecs : Array) : Draw forall X</a>
+        
+          <div class="summary"><p>Draw plot object with given style and given vectors (e.g., <code>plot.draw("lines", x, y)</code>) that may contain NaN values.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#repr:String-instance-method" class="signature"><strong>#repr</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rtics:Cryplot::MajorTics-instance-method" class="signature"><strong>#rtics</strong> : Cryplot::MajorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along major rtics.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rtics_major:MajorTics-instance-method" class="signature"><strong>#rtics_major</strong> : MajorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along minor rtics.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rtics_minor:MinorTics-instance-method" class="signature"><strong>#rtics_minor</strong> : MinorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along minor rtics.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#style_histogram:HistogramStyle-instance-method" class="signature"><strong>#style_histogram</strong> : HistogramStyle</a>
+        
+          <div class="summary"><p>an object that permits histogram style to be customized.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tics:Tics-instance-method" class="signature"><strong>#tics</strong> : Tics</a>
+        
+          <div class="summary"><p>tics of the plot and return a reference to the corresponding specs object.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_s(io:IO):Nil-instance-method" class="signature"><strong>#to_s</strong>(io : IO) : Nil</a>
+        
+          <div class="summary"><p>convert this plot object into a gnuplot formatted string.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xlabel(label:String)-instance-method" class="signature"><strong>#xlabel</strong>(label : String)</a>
+        
+          <div class="summary"><p>Set the label of the x-axis and return a reference to the corresponding specs object.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xrange(min:StringOrFloat,max:StringOrFloat)-instance-method" class="signature"><strong>#xrange</strong>(min : StringOrFloat, max : StringOrFloat)</a>
+        
+          <div class="summary"><p>Set the x-range of the plot (also possible with empty values or autoscale options (e.g.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xtics:Cryplot::MajorTics-instance-method" class="signature"><strong>#xtics</strong> : Cryplot::MajorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along major xtics on the bottom axis.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xtics_major_bottom:MajorTics-instance-method" class="signature"><strong>#xtics_major_bottom</strong> : MajorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along major xtics on the bottom axis.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xtics_major_top:MajorTics-instance-method" class="signature"><strong>#xtics_major_top</strong> : MajorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along major xtics on the top axis.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xtics_minor_bottom:MinorTics-instance-method" class="signature"><strong>#xtics_minor_bottom</strong> : MinorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along minor xtics on the bottom axis.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xtics_minor_top:MinorTics-instance-method" class="signature"><strong>#xtics_minor_top</strong> : MinorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along minor xtics on the top axis.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ylabel(label:String)-instance-method" class="signature"><strong>#ylabel</strong>(label : String)</a>
+        
+          <div class="summary"><p>Set the label of the y-axis and return a reference to the corresponding specs object.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#yrange(min:StringOrFloat,max:StringOrFloat)-instance-method" class="signature"><strong>#yrange</strong>(min : StringOrFloat, max : StringOrFloat)</a>
+        
+          <div class="summary"><p>Set the y-range of the plot (also possible with empty values or autoscale options (e.g.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ytics:Cryplot::MajorTics-instance-method" class="signature"><strong>#ytics</strong> : Cryplot::MajorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along major ytics on the left axis.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ytics_major_left:MajorTics-instance-method" class="signature"><strong>#ytics_major_left</strong> : MajorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along major ytics on the left axis.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ytics_major_right:MajorTics-instance-method" class="signature"><strong>#ytics_major_right</strong> : MajorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along major ytics on the right axis.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ytics_minor_left:MinorTics-instance-method" class="signature"><strong>#ytics_minor_left</strong> : MinorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along minor ytics on the left axis.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ytics_minor_right:MinorTics-instance-method" class="signature"><strong>#ytics_minor_right</strong> : MinorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along minor ytics on the right axis.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ztics:Cryplot::MajorTics-instance-method" class="signature"><strong>#ztics</strong> : Cryplot::MajorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along major ztics.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ztics_major:MajorTics-instance-method" class="signature"><strong>#ztics_major</strong> : MajorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along major ztics.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ztics_minor:MinorTics-instance-method" class="signature"><strong>#ztics_minor</strong> : MinorTics</a>
+        
+          <div class="summary"><p>Return the specifications of the grid lines along minor ztics.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from class <code><a href="../Cryplot/BasePlot.html">Cryplot::BasePlot</a></code></h3>
+  
+  
+    <a href="../Cryplot/BasePlot.html#autoclean(val:Bool)-instance-method" class="tooltip">
+      <span>autoclean(val : Bool)<br/>autoclean : Bool</span>
+    autoclean</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#autoclean=(autoclean:Bool)-instance-method" class="tooltip">
+      <span>autoclean=(autoclean : Bool)</span>
+    autoclean=</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#border:Border-instance-method" class="tooltip">
+      <span>border : Border</span>
+    border</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#cleanup-instance-method" class="tooltip">
+      <span>cleanup</span>
+    cleanup</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#clear-instance-method" class="tooltip">
+      <span>clear</span>
+    clear</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#data_filename:String-instance-method" class="tooltip">
+      <span>data_filename : String</span>
+    data_filename</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#draw(what:String,using:String,expr:String)-instance-method" class="tooltip">
+      <span>draw(what : String, using : String, expr : String)<br/>draw(using : String, expr : String)</span>
+    draw</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#font_name(name:String)-instance-method" class="tooltip">
+      <span>font_name(name : String)</span>
+    font_name</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#font_size(size:Int)-instance-method" class="tooltip">
+      <span>font_size(size : Int)</span>
+    font_size</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#gnuplot(cmd:String)-instance-method" class="tooltip">
+      <span>gnuplot(cmd : String)</span>
+    gnuplot</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#grid:Grid-instance-method" class="tooltip">
+      <span>grid : Grid</span>
+    grid</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#legend:Legend-instance-method" class="tooltip">
+      <span>legend : Legend</span>
+    legend</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#palette(name:Cryplot::Palette)-instance-method" class="tooltip">
+      <span>palette(name : Cryplot::Palette)<br/>palette : Cryplot::Palette</span>
+    palette</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#palette=(palette:Cryplot::Palette)-instance-method" class="tooltip">
+      <span>palette=(palette : Cryplot::Palette)</span>
+    palette=</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#repr:String-instance-method" class="tooltip">
+      <span>repr : String</span>
+    repr</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#samples(value:Int)-instance-method" class="tooltip">
+      <span>samples(value : Int)</span>
+    samples</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#save(filename:String)-instance-method" class="tooltip">
+      <span>save(filename : String)</span>
+    save</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#save_plot_data-instance-method" class="tooltip">
+      <span>save_plot_data</span>
+    save_plot_data</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#show-instance-method" class="tooltip">
+      <span>show</span>
+    show</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#size(width:Int,height:Int)-instance-method" class="tooltip">
+      <span>size(width : Int, height : Int)</span>
+    size</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#style_fill:FillStyle-instance-method" class="tooltip">
+      <span>style_fill : FillStyle</span>
+    style_fill</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#this-instance-method" class="tooltip">
+      <span>this</span>
+    this</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#title(text:String)-instance-method" class="tooltip">
+      <span>title(text : String)<br/>title : Title</span>
+    title</a>, 
+    
+  
+    <a href="../Cryplot/BasePlot.html#to_s(io:IO):Nil-instance-method" class="tooltip">
+      <span>to_s(io : IO) : Nil</span>
+    to_s</a>
+    
+  
+
+
+    
+
+  <h3>Constructor methods inherited from class <code><a href="../Cryplot/BasePlot.html">Cryplot::BasePlot</a></code></h3>
+  
+  
+    <a href="../Cryplot/BasePlot.html#new-class-method" class="tooltip">
+      <span>new</span>
+    new</a>
+    
+  
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L57" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="box_width_absolute(val:Float64)-instance-method">
+      <div class="signature">
+        
+        def <strong>box_width_absolute</strong>(val : Float64)
+
+        <a class="method-permalink" href="#box_width_absolute(val:Float64)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set the default width of boxes in plots containing boxes (in absolute mode).
+In absolute mode, a unit width is equivalent to one unit of length along the <em>x</em> axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L118" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="box_width_relative(val:Float64)-instance-method">
+      <div class="signature">
+        
+        def <strong>box_width_relative</strong>(val : Float64)
+
+        <a class="method-permalink" href="#box_width_relative(val:Float64)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set the default width of boxes in plots containing boxes (in relative mode).
+In relative mode, a unit width is equivalent to setting the boxes side by side.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L124" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_boxes(name:String,xcol:String|Int32,ycol:String|Int32,xwidthcol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_boxes</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xwidthcol : String | Int32)
+
+        <a class="method-permalink" href="#draw_boxes(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xwidthcol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw boxes with given values at @p xcol and @p ycol columns in file @p name as well as the box widths @p xwidthcol.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L405" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_boxes(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_boxes</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_boxes(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw boxes with given values at @p xcol and @p ycol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L400" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_boxes(x:X,y:Y,xwidth:XW):DrawforallX,Y,XW-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_boxes</strong>(x : X, y : Y, xwidth : XW) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y, XW
+
+        <a class="method-permalink" href="#draw_boxes(x:X,y:Y,xwidth:XW):DrawforallX,Y,XW-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw boxes with given @p x and @p y vectors as well as the box widths @p xwidth.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L262" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_boxes(x:X,y:Y):DrawforallX,Y-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_boxes</strong>(x : X, y : Y) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y
+
+        <a class="method-permalink" href="#draw_boxes(x:X,y:Y):DrawforallX,Y-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw boxes with given @p x and @p y vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L257" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_boxes_with_error_bars_y(name:String,xcol:String|Int32,ycol:String|Int32,ylowcol:String|Int32,yhighcol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_boxes_with_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ylowcol : String | Int32, yhighcol : String | Int32)
+
+        <a class="method-permalink" href="#draw_boxes_with_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ylowcol:String%7CInt32,yhighcol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw boxes with error bars along <em>y</em> with given values at @p xcol, @p ycol, @p ylowcol, and @p yhighcol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L415" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_boxes_with_error_bars_y(name:String,xcol:String|Int32,ycol:String|Int32,ydeltacol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_boxes_with_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ydeltacol : String | Int32)
+
+        <a class="method-permalink" href="#draw_boxes_with_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ydeltacol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw boxes with error bars along <em>y</em> with given values at @p xcol, @p ycol, @p ydeltacol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L410" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_boxes_with_error_bars_y(x:X,y:Y,ylow:YL,yhigh:YH):DrawforallX,Y,YL,YH-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_boxes_with_error_bars_y</strong>(x : X, y : Y, ylow : YL, yhigh : YH) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y, YL, YH
+
+        <a class="method-permalink" href="#draw_boxes_with_error_bars_y(x:X,y:Y,ylow:YL,yhigh:YH):DrawforallX,Y,YL,YH-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw boxes with error bars along <em>y</em> with given @p x, @p y, @p ylow, and @p yhigh vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L272" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_boxes_with_error_bars_y(x:X,y:Y,ydelta:YD):DrawforallX,Y,YD-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_boxes_with_error_bars_y</strong>(x : X, y : Y, ydelta : YD) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y, YD
+
+        <a class="method-permalink" href="#draw_boxes_with_error_bars_y(x:X,y:Y,ydelta:YD):DrawforallX,Y,YD-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw boxes with error bars along <em>y</em> with given @p x, @p y, @p ydelta vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L267" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_broken_curve(x:X,y:Y):DrawforallX,Y-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_broken_curve</strong>(x : X, y : Y) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y
+
+        <a class="method-permalink" href="#draw_broken_curve(x:X,y:Y):DrawforallX,Y-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with given @p x and @p y vectors, breaking this curve whenever NaN is found in @p x or @p y.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L237" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_broken_curve_with_points(x:X,y:Y):DrawforallX,Y-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_broken_curve_with_points</strong>(x : X, y : Y) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y
+
+        <a class="method-permalink" href="#draw_broken_curve_with_points(x:X,y:Y):DrawforallX,Y-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with points with given @p x and @p y vectors, breaking this curve whenever NaN is found in @p x or @p y.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L242" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_curve(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with given values at @p xcol and @p ycol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L360" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve(x:X,y:Y):DrawforallX,Y-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve</strong>(x : X, y : Y) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y
+
+        <a class="method-permalink" href="#draw_curve(x:X,y:Y):DrawforallX,Y-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with given @p x and @p y vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L197" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_x(name:String,xcol:String|Int32,ycol:String|Int32,xlowcol:String|Int32,xhighcol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_x</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xlowcol : String | Int32, xhighcol : String | Int32)
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_x(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xlowcol:String%7CInt32,xhighcol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>x</em> with given values at @p xcol, @p ycol, @p xlowcol, and @p xhighcol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L375" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_x(name:String,xcol:String|Int32,ycol:String|Int32,xdeltacol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_x</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xdeltacol : String | Int32)
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_x(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xdeltacol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>x</em> with given values at @p xcol, @p ycol, and @p xdeltacol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L370" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_x(x:X,y:Y,xlow:XL,xhigh:XH):DrawforallX,Y,XL,XH-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_x</strong>(x : X, y : Y, xlow : XL, xhigh : XH) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y, XL, XH
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_x(x:X,y:Y,xlow:XL,xhigh:XH):DrawforallX,Y,XL,XH-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>x</em> with given @p x, @p y, @p xlow, and @p xhigh vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L212" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_x(x:X,y:Y,xdelta:XD):DrawforallX,Y,XD-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_x</strong>(x : X, y : Y, xdelta : XD) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y, XD
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_x(x:X,y:Y,xdelta:XD):DrawforallX,Y,XD-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>x</em> with given @p x, @p y, and @p xdelta vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L207" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_xy(name:String,xcol:String|Int32,ycol:String|Int32,xlowcol:String|Int32,xhighcol:String|Int32,ylowcol:String|Int32,yhighcol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_xy</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xlowcol : String | Int32, xhighcol : String | Int32, ylowcol : String | Int32, yhighcol : String | Int32)
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_xy(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xlowcol:String%7CInt32,xhighcol:String%7CInt32,ylowcol:String%7CInt32,yhighcol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>x</em> and <em>y</em> with given values at @p xcol, @p ycol, @p xlowcol, @p xhighcol, @p ylowcol, and @p yhighcol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L395" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_xy(x:X,y:Y,xlow:XL,xhigh:XH,ylow:YL,yhigh:YH):DrawforallX,Y,XL,XH,YL,YH-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_xy</strong>(x : X, y : Y, xlow : XL, xhigh : XH, ylow : YL, yhigh : YH) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y, XL, XH, YL, YH
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_xy(x:X,y:Y,xlow:XL,xhigh:XH,ylow:YL,yhigh:YH):DrawforallX,Y,XL,XH,YL,YH-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>x</em> and <em>y</em> with given @p x, @p y, @p xlow, @p xhigh, @p ylow, and @p yhigh vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L232" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_xy(name:String,xcol:String|Int32,ycol:String|Int32,xdeltacol:String|Int32,ydeltacol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_xy</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xdeltacol : String | Int32, ydeltacol : String | Int32)
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_xy(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xdeltacol:String%7CInt32,ydeltacol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>x</em> and <em>y</em> with given values at @p xcol, @p ycol, @p xdeltacol, and @p ydeltacol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L390" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_xy(x:X,y:Y,xdelta:XD,ydelta:YD):DrawforallX,Y,XD,YD-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_xy</strong>(x : X, y : Y, xdelta : XD, ydelta : YD) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y, XD, YD
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_xy(x:X,y:Y,xdelta:XD,ydelta:YD):DrawforallX,Y,XD,YD-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>x</em> and <em>y</em> with given @p x, @p y, @p xdelta, and @p ydelta vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L227" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_y(name:String,xcol:String|Int32,ycol:String|Int32,ylowcol:String|Int32,yhighcol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ylowcol : String | Int32, yhighcol : String | Int32)
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ylowcol:String%7CInt32,yhighcol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>y</em> with given values at @p xcol, @p ycol, @p ylowcol, and @p yhighcol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L385" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_y(name:String,xcol:String|Int32,ycol:String|Int32,ydeltacol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ydeltacol : String | Int32)
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ydeltacol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>y</em> with given values at @p xcol, @p ycol, and @p ydeltacol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L380" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_y(x:X,y:Y,ylow:YL,yhigh:YH):DrawforallX,Y,YL,YH-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_y</strong>(x : X, y : Y, ylow : YL, yhigh : YH) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y, YL, YH
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_y(x:X,y:Y,ylow:YL,yhigh:YH):DrawforallX,Y,YL,YH-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>y</em> with given @p x, @p y, @p xlow, and @p xhigh vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L222" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_error_bars_y(x:X,y:Y,ydelta:XD):DrawforallX,Y,XD-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_error_bars_y</strong>(x : X, y : Y, ydelta : XD) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y, XD
+
+        <a class="method-permalink" href="#draw_curve_with_error_bars_y(x:X,y:Y,ydelta:XD):DrawforallX,Y,XD-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with error bars along <em>y</em> with given @p x, @p y, and @p xdelta vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L217" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_points(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_points</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_curve_with_points(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with points with given values at @p xcol and @p ycol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L365" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curve_with_points(x:X,y:Y):DrawforallX,Y-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curve_with_points</strong>(x : X, y : Y) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y
+
+        <a class="method-permalink" href="#draw_curve_with_points(x:X,y:Y):DrawforallX,Y-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a curve with points with given @p x and @p y vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L202" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curves_filled(x:X,y1:Y1,y2:Y2):DrawforallX,Y1,Y2-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curves_filled</strong>(x : X, y1 : Y1, y2 : Y2) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y1, Y2
+
+        <a class="method-permalink" href="#draw_curves_filled(x:X,y1:Y1,y2:Y2):DrawforallX,Y1,Y2-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw curves with given @p x, @p y1 and @p y2 vectors with filled areas above / below / between curves.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L252" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_curves_filled(x:X,y:Y):DrawforallX,Y-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_curves_filled</strong>(x : X, y : Y) : <a href="../Cryplot/Draw.html">Draw</a> forall X, Y
+
+        <a class="method-permalink" href="#draw_curves_filled(x:X,y:Y):DrawforallX,Y-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw curves with given @p x and @p y vectors with filled areas above / below axes.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L247" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_dots(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_dots</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_dots(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw dots with given values at @p xcol and @p ycol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L475" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_dots(x,y)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_dots</strong>(x, y)
+
+        <a class="method-permalink" href="#draw_dots(x,y)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw dots with given @p x and @p y vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L332" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_x(name:String,xcol:String|Int32,ycol:String|Int32,xlowcol:String|Int32,xhighcol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_x</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xlowcol : String | Int32, xhighcol : String | Int32)
+
+        <a class="method-permalink" href="#draw_error_bars_x(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xlowcol:String%7CInt32,xhighcol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>x</em> with given values at @p xcol, @p ycol, @p xlowcol, and @p xhighcol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L425" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_x(name:String,xcol:String|Int32,ycol:String|Int32,xdeltacol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_x</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xdeltacol : String | Int32)
+
+        <a class="method-permalink" href="#draw_error_bars_x(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xdeltacol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>x</em> with given values at @p xcol, @p ycol, and @p xdeltacol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L420" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_x(x,y,xlow,xhigh)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_x</strong>(x, y, xlow, xhigh)
+
+        <a class="method-permalink" href="#draw_error_bars_x(x,y,xlow,xhigh)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>x</em> with given @p x, @p y, @p xlow, and @p xhigh vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L282" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_x(x,y,xdelta)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_x</strong>(x, y, xdelta)
+
+        <a class="method-permalink" href="#draw_error_bars_x(x,y,xdelta)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>x</em> with given @p x, @p y, and @p xdelta vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L277" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_xy(name:String,xcol:String|Int32,ycol:String|Int32,xlowcol:String|Int32,xhighcol:String|Int32,ylowcol:String|Int32,yhighcol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_xy</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xlowcol : String | Int32, xhighcol : String | Int32, ylowcol : String | Int32, yhighcol : String | Int32)
+
+        <a class="method-permalink" href="#draw_error_bars_xy(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xlowcol:String%7CInt32,xhighcol:String%7CInt32,ylowcol:String%7CInt32,yhighcol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>x</em> and <em>y</em> with given values at @p xcol, @p ycol, @p xlowcol, @p xhighcol, @p ylowcol, and @p yhighcol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L445" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_xy(x,y,xlow,xhigh,ylow,yhigh)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_xy</strong>(x, y, xlow, xhigh, ylow, yhigh)
+
+        <a class="method-permalink" href="#draw_error_bars_xy(x,y,xlow,xhigh,ylow,yhigh)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>x</em> and <em>y</em> with given @p x, @p y, @p xlow, @p xhigh, @p ylow, and @p yhigh vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L302" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_xy(name:String,xcol:String|Int32,ycol:String|Int32,xdeltacol:String|Int32,ydeltacol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_xy</strong>(name : String, xcol : String | Int32, ycol : String | Int32, xdeltacol : String | Int32, ydeltacol : String | Int32)
+
+        <a class="method-permalink" href="#draw_error_bars_xy(name:String,xcol:String%7CInt32,ycol:String%7CInt32,xdeltacol:String%7CInt32,ydeltacol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>x</em> and <em>y</em> with given values at @p xcol, @p ycol, @p xdeltacol, and @p ydeltacol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L440" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_xy(x,y,xdelta,ydelta)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_xy</strong>(x, y, xdelta, ydelta)
+
+        <a class="method-permalink" href="#draw_error_bars_xy(x,y,xdelta,ydelta)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>x</em> and <em>y</em> with given @p x, @p y, @p xdelta, and @p ydelta vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L297" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_y(name:String,xcol:String|Int32,ycol:String|Int32,ylowcol:String|Int32,yhighcol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ylowcol : String | Int32, yhighcol : String | Int32)
+
+        <a class="method-permalink" href="#draw_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ylowcol:String%7CInt32,yhighcol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>y</em> with given values at @p xcol, @p ycol, @p ylowcol, and @p yhighcol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L435" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_y(name:String,xcol:String|Int32,ycol:String|Int32,ydeltacol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32, ydeltacol : String | Int32)
+
+        <a class="method-permalink" href="#draw_error_bars_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32,ydeltacol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>y</em> with given values at @p xcol, @p ycol, and @p ydeltacol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L430" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_y(x,y,ylow,yhigh)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_y</strong>(x, y, ylow, yhigh)
+
+        <a class="method-permalink" href="#draw_error_bars_y(x,y,ylow,yhigh)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>y</em> with given @p x, @p y, @p ylow, and @p yhigh vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L292" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_error_bars_y(x,y,ydelta)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_error_bars_y</strong>(x, y, ydelta)
+
+        <a class="method-permalink" href="#draw_error_bars_y(x,y,ydelta)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw error bars along <em>y</em> with given @p x, @p y, and @p ydelta vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L287" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_histogram(name:String,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_histogram</strong>(name : String, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_histogram(name:String,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a histogram with given values at @p ycol column in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L490" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_histogram(y)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_histogram</strong>(y)
+
+        <a class="method-permalink" href="#draw_histogram(y)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw a histogram for the given @p y vector.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L347" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_impulses(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_impulses</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_impulses(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw impulses with given values at @p xcol and @p ycol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L485" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_impulses(x,y)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_impulses</strong>(x, y)
+
+        <a class="method-permalink" href="#draw_impulses(x,y)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw impulses with given @p x and @p y vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L342" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_points(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_points</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_points(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw points with given values at @p xcol and @p ycol columns in file @p name.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L480" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_points(x,y)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_points</strong>(x, y)
+
+        <a class="method-permalink" href="#draw_points(x,y)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw points with given @p x and @p y vectors.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L337" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_steps(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_steps</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_steps(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw steps with given values at @p xcol and @p ycol columns in file @p name. Identical to @ref drawStepsChangeFirstX.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L450" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_steps(x,y)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_steps</strong>(x, y)
+
+        <a class="method-permalink" href="#draw_steps(x,y)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw steps with given @p x and @p y vectors. Identical to @ref drawStepsChangeFirstX.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L307" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_steps_change_first_x(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_steps_change_first_x</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_steps_change_first_x(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw steps with given values at @p xcol and @p ycol columns in file @p name with steps along <em>x</em> changes first.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L455" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_steps_change_first_x(x,y)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_steps_change_first_x</strong>(x, y)
+
+        <a class="method-permalink" href="#draw_steps_change_first_x(x,y)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw steps with given @p x and @p y vectors with steps along <em>x</em> changes first.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L312" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_steps_change_first_y(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_steps_change_first_y</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_steps_change_first_y(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw steps with given values at @p xcol and @p ycol columns in file @p name with steps along <em>y</em> changes first.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L460" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_steps_change_first_y(x,y)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_steps_change_first_y</strong>(x, y)
+
+        <a class="method-permalink" href="#draw_steps_change_first_y(x,y)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw steps with given @p x and @p y vectors with steps along <em>y</em> changes first.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L317" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_steps_filled(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_steps_filled</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_steps_filled(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw steps with given values at @p xcol and @p ycol columns in file @p name with filled area below steps.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L470" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_steps_filled(x,y)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_steps_filled</strong>(x, y)
+
+        <a class="method-permalink" href="#draw_steps_filled(x,y)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw steps with given @p x and @p y vectors with filled area below steps.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L327" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_steps_histogram(name:String,xcol:String|Int32,ycol:String|Int32)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_steps_histogram</strong>(name : String, xcol : String | Int32, ycol : String | Int32)
+
+        <a class="method-permalink" href="#draw_steps_histogram(name:String,xcol:String%7CInt32,ycol:String%7CInt32)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw steps with given values at @p xcol and @p ycol columns in file @p name in a histogram style</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L465" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_steps_histogram(x,y)-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_steps_histogram</strong>(x, y)
+
+        <a class="method-permalink" href="#draw_steps_histogram(x,y)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw steps with given @p x and @p y vectors in a histogram style</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L322" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_with_cols(name:String,with_:String,cols:Array(String|Int32))-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_with_cols</strong>(name : String, with_ : String, cols : Array(String | Int32))
+
+        <a class="method-permalink" href="#draw_with_cols(name:String,with_:String,cols:Array(String%7CInt32))-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw plot object with given style and given vectors (e.g., <code>plot.draw("lines", x, y)</code>).</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L352" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_with_vecs(with_:String,x:X,*vecs:Array):DrawforallX-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_with_vecs</strong>(with_ : String, x : X, *vecs : Array) : <a href="../Cryplot/Draw.html">Draw</a> forall X
+
+        <a class="method-permalink" href="#draw_with_vecs(with_:String,x:X,*vecs:Array):DrawforallX-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw plot object with given style and given vectors (e.g., <code>plot.draw("lines", x, y)</code>).</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L149" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="draw_with_vecs_containing_nan(with_:String,x:X,*vecs:Array):DrawforallX-instance-method">
+      <div class="signature">
+        
+        def <strong>draw_with_vecs_containing_nan</strong>(with_ : String, x : X, *vecs : Array) : <a href="../Cryplot/Draw.html">Draw</a> forall X
+
+        <a class="method-permalink" href="#draw_with_vecs_containing_nan(with_:String,x:X,*vecs:Array):DrawforallX-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Draw plot object with given style and given vectors (e.g., <code>plot.draw("lines", x, y)</code>) that may contain NaN values.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L173" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="repr:String-instance-method">
+      <div class="signature">
+        
+        def <strong>repr</strong> : String
+
+        <a class="method-permalink" href="#repr:String-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L494" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rtics:Cryplot::MajorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>rtics</strong> : <a href="../Cryplot/MajorTics.html">Cryplot::MajorTics</a>
+
+        <a class="method-permalink" href="#rtics:Cryplot::MajorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along major rtics.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L144" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rtics_major:MajorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>rtics_major</strong> : <a href="../Cryplot/MajorTics.html">MajorTics</a>
+
+        <a class="method-permalink" href="#rtics_major:MajorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along minor rtics.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L47" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rtics_minor:MinorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>rtics_minor</strong> : <a href="../Cryplot/MinorTics.html">MinorTics</a>
+
+        <a class="method-permalink" href="#rtics_minor:MinorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along minor rtics.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L50" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="style_histogram:HistogramStyle-instance-method">
+      <div class="signature">
+        
+        def <strong>style_histogram</strong> : <a href="../Cryplot/HistogramStyle.html">HistogramStyle</a>
+
+        <a class="method-permalink" href="#style_histogram:HistogramStyle-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>an object that permits histogram style to be customized.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L12" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tics:Tics-instance-method">
+      <div class="signature">
+        
+        def <strong>tics</strong> : <a href="../Cryplot/Tics.html">Tics</a>
+
+        <a class="method-permalink" href="#tics:Tics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>tics of the plot and return a reference to the corresponding specs object.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_s(io:IO):Nil-instance-method">
+      <div class="signature">
+        
+        def <strong>to_s</strong>(io : IO) : Nil
+
+        <a class="method-permalink" href="#to_s(io:IO):Nil-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+            <div class="doc-inherited">
+              Description copied from class <a href="../Cryplot/BasePlot.html">Cryplot::BasePlot</a>
+            </div>
+          
+          <p>convert this plot object into a gnuplot formatted string.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L555" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xlabel(label:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>xlabel</strong>(label : String)
+
+        <a class="method-permalink" href="#xlabel(label:String)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set the label of the x-axis and return a reference to the corresponding specs object.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L95" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xrange(min:StringOrFloat,max:StringOrFloat)-instance-method">
+      <div class="signature">
+        
+        def <strong>xrange</strong>(min : <a href="../Cryplot/StringOrFloat.html">StringOrFloat</a>, max : <a href="../Cryplot/StringOrFloat.html">StringOrFloat</a>)
+
+        <a class="method-permalink" href="#xrange(min:StringOrFloat,max:StringOrFloat)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set the x-range of the plot (also possible with empty values or autoscale options (e.g. "", "*")).</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L107" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xtics:Cryplot::MajorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>xtics</strong> : <a href="../Cryplot/MajorTics.html">Cryplot::MajorTics</a>
+
+        <a class="method-permalink" href="#xtics:Cryplot::MajorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along major xtics on the bottom axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L129" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xtics_major_bottom:MajorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>xtics_major_bottom</strong> : <a href="../Cryplot/MajorTics.html">MajorTics</a>
+
+        <a class="method-permalink" href="#xtics_major_bottom:MajorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along major xtics on the bottom axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L17" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xtics_major_top:MajorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>xtics_major_top</strong> : <a href="../Cryplot/MajorTics.html">MajorTics</a>
+
+        <a class="method-permalink" href="#xtics_major_top:MajorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along major xtics on the top axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L20" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xtics_minor_bottom:MinorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>xtics_minor_bottom</strong> : <a href="../Cryplot/MinorTics.html">MinorTics</a>
+
+        <a class="method-permalink" href="#xtics_minor_bottom:MinorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along minor xtics on the bottom axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L23" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xtics_minor_top:MinorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>xtics_minor_top</strong> : <a href="../Cryplot/MinorTics.html">MinorTics</a>
+
+        <a class="method-permalink" href="#xtics_minor_top:MinorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along minor xtics on the top axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L26" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ylabel(label:String)-instance-method">
+      <div class="signature">
+        
+        def <strong>ylabel</strong>(label : String)
+
+        <a class="method-permalink" href="#ylabel(label:String)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set the label of the y-axis and return a reference to the corresponding specs object.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L101" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="yrange(min:StringOrFloat,max:StringOrFloat)-instance-method">
+      <div class="signature">
+        
+        def <strong>yrange</strong>(min : <a href="../Cryplot/StringOrFloat.html">StringOrFloat</a>, max : <a href="../Cryplot/StringOrFloat.html">StringOrFloat</a>)
+
+        <a class="method-permalink" href="#yrange(min:StringOrFloat,max:StringOrFloat)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Set the y-range of the plot (also possible with empty values or autoscale options (e.g. "", "*")).</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L112" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ytics:Cryplot::MajorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>ytics</strong> : <a href="../Cryplot/MajorTics.html">Cryplot::MajorTics</a>
+
+        <a class="method-permalink" href="#ytics:Cryplot::MajorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along major ytics on the left axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L134" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ytics_major_left:MajorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>ytics_major_left</strong> : <a href="../Cryplot/MajorTics.html">MajorTics</a>
+
+        <a class="method-permalink" href="#ytics_major_left:MajorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along major ytics on the left axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L29" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ytics_major_right:MajorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>ytics_major_right</strong> : <a href="../Cryplot/MajorTics.html">MajorTics</a>
+
+        <a class="method-permalink" href="#ytics_major_right:MajorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along major ytics on the right axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L32" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ytics_minor_left:MinorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>ytics_minor_left</strong> : <a href="../Cryplot/MinorTics.html">MinorTics</a>
+
+        <a class="method-permalink" href="#ytics_minor_left:MinorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along minor ytics on the left axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L35" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ytics_minor_right:MinorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>ytics_minor_right</strong> : <a href="../Cryplot/MinorTics.html">MinorTics</a>
+
+        <a class="method-permalink" href="#ytics_minor_right:MinorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along minor ytics on the right axis.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L38" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ztics:Cryplot::MajorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>ztics</strong> : <a href="../Cryplot/MajorTics.html">Cryplot::MajorTics</a>
+
+        <a class="method-permalink" href="#ztics:Cryplot::MajorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along major ztics.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L139" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ztics_major:MajorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>ztics_major</strong> : <a href="../Cryplot/MajorTics.html">MajorTics</a>
+
+        <a class="method-permalink" href="#ztics_major:MajorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along major ztics.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L41" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ztics_minor:MinorTics-instance-method">
+      <div class="signature">
+        
+        def <strong>ztics_minor</strong> : <a href="../Cryplot/MinorTics.html">MinorTics</a>
+
+        <a class="method-permalink" href="#ztics_minor:MinorTics-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return the specifications of the grid lines along minor ztics.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/naqvis/cryplot/blob/642cec5e66b0bb4f15be23a047f30684b0284f16/src/plot/plot.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
